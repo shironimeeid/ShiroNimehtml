@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Utama ShiroAnime</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/icon/logo.jpg" type="image/jpg">
 </head>
 <body>
     <div class="container">
         <h1>Selamat Datang di Server ShiroNime</h1>
         <p>Ini adalah halaman yang disajikan oleh Express dan Django</p>
         <button id="toggleTheme">Ganti Tema</button>
-        <!-- Mengganti tombol dengan tautan yang terlihat seperti tombol -->
-        <a href="https://df18076b-0b43-43af-905e-48cf1842cc85-00-2rfhu0zixp4ke.worf.replit.dev/" class="button">Anime</a>
+        <button id="redirectToDjango">Anime</button>
+        <link rel="icon" href="/icon/logo.jpg" type="image/jpg">
+
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+<script>
+document.getElementById('redirectToDjango').addEventListener('click', function() {
+    window.location.href = 'https://df18076b-0b43-43af-905e-48cf1842cc85-00-2rfhu0zixp4ke.worf.replit.dev/'
+
+document.getElementById('toggleTheme').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+});
+
+</script>
 <style>
     body {
     font-family: Arial, sans-serif;
