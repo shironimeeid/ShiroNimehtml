@@ -13,6 +13,7 @@
         <p>Ini adalah halaman yang disajikan oleh Express dan Django</p>
         <button id="toggleTheme">Ganti Tema</button>
         <button id="redirectToDjango">Anime</button>
+        <audio id="animeSound" src="anime.mp3"></audio> <!-- Tambahkan ini -->
     </div>
     <script>
     document.getElementById('toggleTheme').addEventListener('click', function() {
@@ -22,10 +23,16 @@
 </body>
 </html>
 <script>
-document.getElementById('redirectToDjango').addEventListener('click', function() {
-    window.location.href = 'https://df18076b-0b43-43af-905e-48cf1842cc85-00-2rfhu0zixp4ke.worf.replit.dev/';
-});
-</script>
+    document.getElementById('redirectToDjango').addEventListener('click', function() {
+        var sound = document.getElementById("animeSound");
+        sound.play();
+    
+        // Tunda pengalihan selama beberapa detik
+        setTimeout(function() {
+            window.location.href = 'https://df18076b-0b43-43af-905e-48cf1842cc85-00-2rfhu0zixp4ke.worf.replit.dev/';
+        }, 2000); // Tunda 2000 ms (2 detik)
+    });
+    </script>
 <style>
     body {
     font-family: Arial, sans-serif;
