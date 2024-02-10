@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-theme button:hover {
+    background-color: #777;
+}
+
+/* Tema Terang (Default) */
+body {
+    background-color: #f0f0f0;
+    color: #333; /* Warna teks untuk tema terang */
+}
+
+/* Tema Gelap */
+.dark-theme {
+    background-color: #333;
+    color: #fff; /* Warna teks untuk tema gelap */
+}
+
+/* Tombol selalu terlihat dengan kontras tinggi terhadap background */
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+.dark-theme button {
+    background-color: #555;
+}
+
+button:hover {
+    opacity: 0.8;
+}

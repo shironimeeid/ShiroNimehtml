@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama ShiroAnime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang di Server ShiroNime</h1>
+        <p>Ini adalah halaman yang disajikan oleh Express dan Django</p>
+        <button id="toggleTheme">Ganti Tema</button>
+        <button id="redirectToDjango">Anime</button>
+        <link rel="icon" href="/icon/logo.jpg" type="image/jpg">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+
+document.getElementById('toggleTheme').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+});
+
+</script>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transisi halus untuk tema */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    transition: text-shadow 0.5s ease; 
+}
+
+p {
+    transition: text-shadow 0.5s ease;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme h1, .dark-theme p {
+    text-shadow: 0 0 8px #007bff; 
+}
+
+h1 {
+    transition: text-shadow 0.5s ease; 
+}
+
+.dark-theme h1, .dark-theme p {
+    text-shadow: 0 0 8px #007bff; 
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff; 
+}
+
+.dark-theme h1 {
+    color: #fff; 
+    text-shadow: 0 0 8px #007bff; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
